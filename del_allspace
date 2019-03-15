@@ -1,0 +1,14 @@
+#消除字符串中空格的函数，传递一个未处理的字符串，返回一个删去所有空格的字符串
+
+def del_allspace(old_str):#读入一个未经处理的字符串
+
+    new_str=''#新字符串，存储处理过的字符串
+
+    if old_str=='':#如果输入一个空字符串，则报错，返回一个空字符串
+        print('不能输入空字符串')
+        return('')
+
+    for i in range(len(old_str)):#遍历旧字符串
+        if old_str[i]!=' ':#如果元素不等于空格，则赋给新字符串
+            new_str+=old_str[i]
+    return(new_str)#返回处理过的字符串
